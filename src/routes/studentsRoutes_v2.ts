@@ -16,7 +16,12 @@ const router = Router();
 // get students (by program)
 router.get("/", (req: Request, res: Response) => {
   try {
+
+
+
     const program = req.query.program;
+
+    
 
     if (program) {
       let filtered_students = students.filter(
