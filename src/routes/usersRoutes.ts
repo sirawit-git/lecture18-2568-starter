@@ -19,10 +19,10 @@ const router = Router();
 router.get("/", authenticateToken,checkRoleAdmin, (req: CustomRequest, res: Response) => {
   try {
 
-    const payload = req.user;
-    const user = users.find(
-      (u: User) => u.username === (payload as UserPayload).username
-    );
+    // const payload = req.user;
+    // const user = users.find(
+    //   (u: User) => u.username === (payload as UserPayload).username
+    // );
     return res.status(200).json({
       success: true,
       message: "successful oparation",
