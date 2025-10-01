@@ -98,7 +98,7 @@ router.post("/reset", authenticateToken, (req: Request, res: Response) => {
     reset_users();
     return res.status(200).json({
       success: true,
-      message: "User database has been reset",
+      message: "enrollments database has been reset",
     });
   } catch (err) {
     return res.status(500).json({
